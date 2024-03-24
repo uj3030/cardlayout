@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+
+        body {
+            background: #1e1f21;
+            color: #fff;
+
+        }
+
+        .bigbox {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-gap: 40px;
+            margin: 60px;
+
+
+        }
+
+        .card {
+            height: 300px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px rgba(255, 254, 254, 0.659);
+        }
+
+        .card img {
+            height: 300px;
+            width: 100%;
+            /* border-radius: 10px; */
+            transition: transform 1s;
+        }
+
+        .content {
+            height: 0;
+            width: 100%;
+            background: linear-gradient(transparent, #2a2a2a30 5%);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+            transition: height 0.5s;
+            color: #ffffff;
+        }
+
+        .card:hover .content {
+            height: 100%;
+
+            transition: height 1s ease;
+        }
+
+
+
+
+        .content h2 {
+            font-weight: 500;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            font-family: bebas neue;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        .card img:hover {
+            transform: scale(1.5);
+        }
+
+        .card:hover .content {
+            height: 35%;
+            transition: height 2s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card-area">
+        <div class="bigbox">
+            <div class="card">
+                <img src="kerrala.jpeg" alt="">
+                <div class="content">
+                    <h2>KERALA</h2>
+                    <p class="text">Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea
+                        shoreline.
+                        It's known for its palm-lined beaches and backwaters, a network of canals. Inland are the
+                        Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well as
+                        wildlife.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="guju.jpeg" alt="">
+                <div class="content">
+                    <h2>GUJARAT</h2>
+                    <p>Gujarat is a state along the western coast of India. Its coastline of about 1,600 km is the
+                        longest in the country, most of which lies on the Kathiawar peninsula. Gujarat is the
+                        fifth-largest Indian state by area,</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="punjab.jpeg" alt="">
+                <div class="content">
+                    <h2>PUNJAB</h2>
+                    <p>Punjab, a state bordering Pakistan, is the heart of India’s Sikh community. The city of
+                        Amritsar,founded in the 1570s by Sikh Guru Ram Das, is the site of Harmandir Sahib, the holiest
+                        gurdwara.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="rajsathan.jpeg" alt="">
+                <div class="content">
+                    <h2>RAJASTHAN</h2>
+                    <p>Rajasthan is a state in northern India. It covers 342,239 square kilometres or 10.4 per cent of
+                        India's total geographical area. It is the largest Indian state by area and the seventh largest
+                        by population.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="mum.jpg" alt="">
+                <div class="content">
+                    <h2>MUMBAI</h2>
+                    <p>Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial
+                        center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of
+                        India stone arch.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="himachal.jpeg" alt="">
+                <div class="content">
+                    <h2>HIMACHAL PRADESH</h2>
+                    <p>Himachal Pradesh is a northern Indian state in the Himalayas. It's home to scenic mountain towns
+                        and resorts such as Dalhousie. Himachal Pradesh has a strong Tibetan presence. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
